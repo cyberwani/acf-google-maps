@@ -311,7 +311,6 @@ class google_maps_address_lookup extends acf_Field
     .map {
       float:right;
       width:60%;
-      background:url( <?php bloginfo('stylesheet_directory') ?>/images/gmaps.png ) no-repeat center center; 
       padding:0 1em;
     }
     .map iframe {
