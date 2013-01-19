@@ -1,0 +1,24 @@
+.map {
+  float:right;
+  width:60%;
+  padding:0 1em;
+}
+.map iframe {
+  width:100%;
+  border:1px solid #eee;
+}
+.address-info, .map {
+  margin-top:4em;
+}
+.address-info .widefat {
+  width:97%;
+}
+.error-message {
+  display:none;
+  border:1px solid red;
+  background-color:pink;
+  padding:1em;
+}
+.clear {
+  clear:both;
+}
