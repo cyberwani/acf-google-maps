@@ -161,11 +161,11 @@ class acf_google_maps extends acf_Field
     </div>
 
     <fieldset class="address-info">
-      <p><b>Name</b> <input type="text" id="property-name" class="widefat" name="<? echo $field['name'] ?>[name]" value="<?php echo $name ?>" / > </p>
-      <p><b>Street</b> <input type="text" id="property-street" class="widefat" name="<? echo $field['name'] ?>[street]" value="<?php echo $street ?>" / > </p>
-      <p><b>City</b>   <input type="text" id="property-city"   class="widefat" name="<? echo $field['name'] ?>[city]" value="<?php echo $city ?>" / > </p>
-      <p><b>State</b>  <input type="text" id="property-state"  class="widefat" name="<? echo $field['name'] ?>[state]" value="<?php echo $state ?>" / > </p>
-      <p><b>Zip</b>    <input type="text" id="property-zip"    class="widefat" name="<? echo $field['name'] ?>[zip]" value="<?php echo $zip ?>" / > </p>
+      <p><b>Name</b> <input type="text" id="property-name" class="widefat" name="<?php echo $field['name'] ?>[name]" value="<?php echo $name ?>" / > </p>
+      <p><b>Street</b> <input type="text" id="property-street" class="widefat" name="<?php echo $field['name'] ?>[street]" value="<?php echo $street ?>" / > </p>
+      <p><b>City</b>   <input type="text" id="property-city"   class="widefat" name="<?php echo $field['name'] ?>[city]" value="<?php echo $city ?>" / > </p>
+      <p><b>State</b>  <input type="text" id="property-state"  class="widefat" name="<?php echo $field['name'] ?>[state]" value="<?php echo $state ?>" / > </p>
+      <p><b>Zip</b>    <input type="text" id="property-zip"    class="widefat" name="<?php echo $field['name'] ?>[zip]" value="<?php echo $zip ?>" / > </p>
       <table>
         <tr>
           <td><b>Google Address:</b></td>
@@ -180,10 +180,10 @@ class acf_google_maps extends acf_Field
           <td><span id="lng"><?php echo $lng ?></span></td>
         </tr>
       </table>
-      <input class="required address" type="hidden" name="<? echo $field['name'] ?>[address]" value="<?php echo $address ?>" />
-      <input class="required google-address" type="hidden" name="<? echo $field['name'] ?>[google_address]" value="<?php echo $google_address ?>" />
-      <input class="required" id="acf-property-lat" type="hidden" name="<? echo $field['name'] ?>[lat]" value="<?php echo $lat ?>" />
-      <input class="required" id="acf-property-lng" type="hidden" name="<? echo $field['name'] ?>[lng]" value="<?php echo $lng ?>" />
+      <input class="required address" type="hidden" name="<?php echo $field['name'] ?>[address]" value="<?php echo $address ?>" />
+      <input class="required google-address" type="hidden" name="<?php echo $field['name'] ?>[google_address]" value="<?php echo $google_address ?>" />
+      <input class="required" id="acf-property-lat" type="hidden" name="<?php echo $field['name'] ?>[lat]" value="<?php echo $lat ?>" />
+      <input class="required" id="acf-property-lng" type="hidden" name="<?php echo $field['name'] ?>[lng]" value="<?php echo $lng ?>" />
       <input class="required" id="property-lat" type="hidden" name="_address_lat" value="<?php echo $lat ?>" />
       <input class="required" id="property-lng" type="hidden" name="_address_lng" value="<?php echo $lng ?>" />
     </fieldset>
