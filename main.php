@@ -210,7 +210,7 @@ class acf_google_maps extends acf_Field
 	
 	function admin_print_scripts()
 	{
-		wp_enqueue_script('acf_google_maps_script', get_stylesheet_directory_uri() . '/library/php/acf-addons/acf-google-maps/js/main.js', array('jquery', 'google_maps'), '1'); 
+		wp_enqueue_script('acf_google_maps_script', get_template_directory_uri() . '/library/php/acf-addons/acf-google-maps/js/main.js', array('jquery', 'google_maps'), '1'); 
 		wp_enqueue_script('google_maps', '//maps.google.com/maps/api/js?sensor=false', null, null); 
 
 	}
@@ -226,7 +226,7 @@ class acf_google_maps extends acf_Field
 	
 	function admin_print_styles()
 	{
-		wp_enqueue_style('acf_google_maps_style', get_stylesheet_directory_uri() . '/library/php/acf-addons/acf-google-maps/css/main.css'); 
+		wp_enqueue_style('acf_google_maps_style', get_template_directory_uri() . '/library/php/acf-addons/acf-google-maps/css/main.css'); 
 	}
 
 	
