@@ -21,8 +21,10 @@ cp -r ~/Downloads/acf-google-maps/* library/php/acf-addons/
 * Edit `functions.php` to include the ACF addon
 
 ```
-if(function_exists("register_field")) {
-  register_field('acf_google_maps', dirname(__FILE__) . '/library/php/acf-addons/acf-google-maps/main.php');
+add_action( 'acf/register_fields', 've_register_acf_fields' );
+
+function ve_register_acf_fields() {
+    include_once('library/php/acf-addons/acf-google-maps/main.php');
 }
 ```
 
