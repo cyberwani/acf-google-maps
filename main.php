@@ -141,17 +141,6 @@ class acf_google_maps extends acf_Field
 
           <p class="error-message">Enter an address for the property.</p>
 
-          <?php /* ?>
-          <h4>How it works</h4>
-          <ol>
-            <li>Enter the property address into the "Address Lookup Tool" (directly below)</li>
-            <li>Click "Get Coordinates"</li>
-            <li>We fetch the latitude and longitude coordinates from Google, which are required for the search feature to work properly.</li>
-            <li>The "Street", "City", "State", and "Zip" are for presentation purposes only and are not used in the search function, so feel free to change "Pl" to "Place", or "Dr" to "Drive"</li>
-          </ol>
-
-          <h4>Address Lookup Tool</h4>
-          <?php */ ?>
           <p> <input type="text" class="widefat" placeholder="Enter the street address" id="property-address" name="<?php echo $field['name'] ?>[search_string]" value="" / > </p>
           <p> <a id="get-coordinates" class="button-primary" href="javascript:;">Get Coordinates</a> </p>
         </fieldset>
